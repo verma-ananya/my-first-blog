@@ -30,7 +30,7 @@ def post_new(request):
 	return render(request, 'post_edit.html', {'form': form})
 
 
-def post_edit(request, pk):
+"""def post_edit(request, pk):
 	post = get_object_or_404(Post, pk=pk)
     if request.method == "POST":
     	form = PostForm(request.POST, instance=post)
@@ -42,4 +42,4 @@ def post_edit(request, pk):
             return redirect('post_detail', pk=post.pk)
     else:
         form = PostForm(instance=post)
-    return render(request, 'blog/post_edit.html', {'form': form})
+    return render(request, 'blog/post_edit.html', {'form': form})"""
